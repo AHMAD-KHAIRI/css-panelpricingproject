@@ -50,8 +50,55 @@ table {
 /* Add stylings after this line */
 html {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #60a9ff;
+}
+
+.panel {
+    background-color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pricing-plan {
+    border-right: 1px solid grey;
+}
+
+ul, span, a {
+    color: #60a9ff;
+}
+
+a {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #adb5bd;
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+
+span {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+ul, li {
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-evenly;
 }
