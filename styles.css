@@ -135,7 +135,7 @@ li:nth-of-type(2) {
 /* add stylings to the whole website */
 html {
     font-family: 'Open Sans', sans-serif;
-    /* setting border-box means if we set a width on an element (e.g. 100px) that's going to factor in the width of the border.
+    /* setting box sizing as border-box means if we set a width on an element (e.g. 100px) that's going to factor in the width of the border.
     So we're not just setting the inner content we're also including the border width so the overall width will be 100px */
     box-sizing: border-box;
 }
@@ -151,8 +151,9 @@ body {
 
 /* add stylings to the div elements */
 .panel {
+    /* give the background color of the div element/container */
     background-color: white;
-    /* to make the border rounded corners */
+    /* to give the border rounded corners */
     border-radius: 10px;
     /* to give some space around the content, add 2-values padding: |top and bottom| |left and right| */
     padding: 15px 25px;
@@ -161,20 +162,25 @@ body {
     /* max-width is set so the content never gets larger than 100% at which point it's going to be centered*/
     max-width: 960px;
     /* design the website with mobile layout first (column based). create mobile layout as the default */
-    /* on larger screen sizes we'll change it to be row based instead of column based */
+    /* on larger screen sizes we'll change it to be row based instead of column based using mediaqueries*/
     display: flex;
     flex-direction: column;
-    /* to center everything in the panel use text-align*/
+    /* to center all text in the panel use text-align*/
     text-align: center;
     /* set all text as uppercase using text-transform */
     text-transform: uppercase;
+    /* add box shadow effect */
+    /* box-shadow: offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 1em 1em -0.4em #348efe;
 }
 
+/* add stylings to the elements inside the div class */
 .pricing-plan {
     /* create a bottom border for all 3 div's */
     border-bottom: 1px solid#e1f1ff;
 }
 
+/* add stylings to the last div element */
 .pricing-plan:last-child {
     /* removes the bottom border for the 3rd div */
     border-bottom: none;
@@ -190,7 +196,7 @@ body {
 
 /* add stylings to the header elements */
 .pricing-header {
-    /* change the font color to gray color, size and spacing of the headers */
+    /* change the font color, size and spacing of the headers */
     color: #888;
     /* font weight gives it a bolder/thicker look */
     font-weight: 600;
@@ -207,7 +213,7 @@ body {
     color: #016ff9;
 }
 
-/* add stylings to the li elements */
+/* add stylings to the li elements inside ul element*/
 .pricing-features-item {
     /* font weight gives it a bolder/thicker look */
     font-weight: 600;
@@ -226,6 +232,7 @@ body {
 
 /* add stylings to the last li element */
 .pricing-features-item:last-child {
+    /* give the last border a bottom line */
     border-bottom: 1px solid #e1f1ff;
 }
 
@@ -233,8 +240,9 @@ body {
 .pricing-price {
     color: #016ff9;
     /* give the span a chunky look */
+    /* set as block element the span element  */
     display: block;
-    /* increase font size */
+    /* increase the font size */
     font-size: 32px;
     /* font weight gives it a bolder/thicker look */
     font-weight: 700;
@@ -258,12 +266,15 @@ body {
     /* 2 value margin: |top and bottom| |left and right| */
     margin: 25px 0;
     /* add a transition effect to the element when it is hovered over */
-    transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }
 
 /* add a hover effect */
 .pricing-button:hover, .pricing-button:focus {
+    /* changes background color when hovered and focus */
     background-color: #e1f1ff;
+    /* creates a box shadow effect when hovered */
+    box-shadow: 0 0.5em 0.5em -0.4em #348efe;
 }
 
 /* add stylings only to the selected class element */
