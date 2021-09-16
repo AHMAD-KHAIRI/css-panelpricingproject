@@ -132,6 +132,7 @@ li:nth-of-type(2) {
 
 /* (Code along) Add stylings after this line */
 
+/* add stylings to the whole website */
 html {
     font-family: 'Open Sans', sans-serif;
     /* setting border-box means if we set a width on an element (e.g. 100px) that's going to factor in the width of the border.
@@ -139,6 +140,7 @@ html {
     box-sizing: border-box;
 }
 
+/* add stylings to all elements inside the body */
 body {
     background-color: #60a9ff;
     display: flex;
@@ -147,6 +149,7 @@ body {
     min-height: 100vh;
 }
 
+/* add stylings to the div elements */
 .panel {
     background-color: white;
     /* to make the border rounded corners */
@@ -177,9 +180,60 @@ body {
     border-bottom: none;
 }
 
+/* add stylings to the img elements */
 .pricing-img {
     /* gives the img element some space by giving it a margin (in this case bottom) */
     margin-bottom: 25px;
     /* set width to 100% of the parent element */
     max-width: 100%;
+}
+
+/* add stylings to the header elements */
+.pricing-header {
+    /* change the font color to gray color, size and spacing of the headers */
+    color: #888;
+    /* font weight gives it a bolder/thicker look */
+    font-weight: 600;
+    /* the letter spacing gives a little bit of space with the next element */
+    letter-spacing: 1px;
+}
+
+/* add stylings to the ul elements */
+.pricing-features {
+    /* add a little bit of spacing to the ul by adding margin*/
+    /* 3-value margin: top | horizontal | bottom */
+    margin: 50px 0 25px;
+    /* change font color */
+    color: #016ff9;
+}
+
+/* add stylings to the li elements */
+.pricing-features-item {
+    /* font weight gives it a bolder/thicker look */
+    font-weight: 600;
+    /* the letter spacing gives a little bit of space with the next element */
+    letter-spacing: 1px;
+    /* change the font size */
+    font-size: 12px;
+    /* set the distance between lines of text by using line-height property */
+    /* Unitless values: use this number multiplied by the element's font size */
+    line-height: 1.5;
+    /* add some padding 2-values padding: |top and bottom| |left and right| */
+    padding: 15px 0;
+    /* add a top border for the li elements  */
+    border-top: 1px solid #e1f1ff;
+}
+
+/* add stylings to the last li element */
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+/* add styling to the span elements */
+.pricing-price {
+    color: #016ff9;
+    /* to give the span a chunky look */
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
 }
