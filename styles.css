@@ -232,8 +232,52 @@ body {
 /* add styling to the span elements */
 .pricing-price {
     color: #016ff9;
-    /* to give the span a chunky look */
+    /* give the span a chunky look */
     display: block;
+    /* increase font size */
     font-size: 32px;
+    /* font weight gives it a bolder/thicker look */
     font-weight: 700;
+}
+
+/* add stylings to the anchortag <a> elements */
+.pricing-button {
+    /* add border to make it look like a button */
+    border: 1px solid #9dd1f9;
+    /* add border radius to give it rounded corners  */
+    border-radius: 10px;
+    /* add font color */
+    color: #348efe;
+    display: inline-block;
+    /* give some room inside of the box by using padding. 
+    2-values padding: |top and bottom| |left and right| */
+    padding: 15px 35px;
+    /* remove the underline from the <a> element */
+    text-decoration: none;
+    /* add some spacing outside of the border by using margin */
+    /* 2 value margin: |top and bottom| |left and right| */
+    margin: 25px 0;
+    /* add a transition effect to the element when it is hovered over */
+    transition: background-color 200ms ease-in-out;
+}
+
+/* add a hover effect */
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+/* add stylings only to the selected class element */
+.pricing-button.is-featured {
+    /* set the background color */
+    background-color: #48aaff;
+    /* set the font color */
+    color: white;
+}
+
+/* add effects only to the selected class element when hovered and focused*/
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
+    /* set the background color */
+    background-color: #269aff;
+    /* set the font color */
+    color: white;
 }
