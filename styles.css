@@ -281,3 +281,30 @@ body {
     /* set the font color */
     color: white;
 }
+
+/* add responsive design stylings when website is viewed from a larger screen size with mediaqueries*/
+/* the breakpoint will be the minimum width set where the changes will happen  (e.g. at 900px) */
+@media (min-width: 900px) {
+    /* add responsive design stylings to the whole div element/container */
+    .panel {
+        /* changes the view/display direction from column based to row based */
+        flex-direction: row;
+    }
+
+    /* add responsive design stylings to the div elements */
+    .pricing-plan {
+        /* when viewed/displayed as rows on the screen, bottom border is removed */
+        border-bottom: none;
+        /* now right border is added when viewed as rows */
+        border-right: 1px solid#e1f1ff;
+        /* sets padding for |top and bottom| |left and right| to give some space */
+        padding: 25px 50px;
+    }
+
+    /* add responsive design stylings to all last div elements */
+    .pricing-plan:last-child {
+        /* when viewed/displayed as rows on the screen, right border is removed */
+        border-right: none;
+    }
+    
+}
