@@ -50,11 +50,16 @@ table {
 /* Add stylings after this line */
 html {
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+
 }
 
 body {
     background-color: #60a9ff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    text-align: center;
 }
 
 .panel {
@@ -62,43 +67,67 @@ body {
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px solid grey;
     border-radius: 10px;
-    text-align: center;
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+
+}
+
+.panel div:nth-of-type(2){
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
 }
 
 .pricing-plan {
-    border-right: 1px solid grey;
+    padding: 10px;
 }
 
 ul, span, a {
     color: #60a9ff;
+    font-weight: bold;
 }
 
 a {
+    width: 100px;
     display: flex;
-    border: 1px solid black;
+    border: 2px solid;
     border-radius: 5px;
-    padding: 0;
-    text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 1em 0;
+    margin: 1em;
+    text-decoration: none;
+}
+
+.pricing-button-is-featured {
+    background-color: #60a9ff;
+    color: white;
 }
 
 h2 {
     font-size: 1.5em;
     color: #adb5bd;
     font-weight: bold;
-    padding-bottom: 10%;
+    padding-bottom: 10px;
+    margin: 1.5em;
 }
 
 span {
     font-size: 3em;
-    font-weight: bolder;
+    color: #0e5fbd;
 }
 
-ul, li {
-    margin: 10px;
-    padding: 5px;
-    justify-content: space-evenly;
+li {
+    padding: 1em;
+    margin: 1em;
+    border-top: 2px solid lightgray;
+}
+
+li:nth-of-type(2) {
+    border-bottom: 2px solid lightgray;
+}
+
+@media (max-width: 768px) {
+    .panel {
+        flex-direction: column;
+    }
 }
