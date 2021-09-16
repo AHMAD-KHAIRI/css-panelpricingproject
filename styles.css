@@ -170,8 +170,12 @@ body {
     /* set all text as uppercase using text-transform */
     text-transform: uppercase;
     /* add box shadow effect */
-    /* box-shadow: offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 0 1em 1em -0.4em #348efe;
+    /* box-shadow: | offset-x (specifies the horizontal distance, -ve values place the shadow to the left of the element) | 
+                   | offset-y (specifies the vertical distance, -ve values place the shadow above the element) | 
+                   | blur-radius (The larger this value, the bigger the blur) | 
+                   | spread-radius (Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink) | 
+                   | color | */
+    box-shadow: 0 0.5em 0.5em -0.4em #348efe;
 }
 
 /* add stylings to the elements inside the div class */
