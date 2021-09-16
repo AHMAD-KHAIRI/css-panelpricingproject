@@ -47,8 +47,9 @@ table {
 	border-spacing: 0;
 }
 
-/* Add stylings after this line */
-html {
+/* (Own attempt) Add stylings after this line */
+
+/* html {
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -68,9 +69,6 @@ body {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    /* flex-grow: 1; */
-    /* flex-shrink: 2; */
-
 }
 
 .panel div:nth-of-type(2){
@@ -130,4 +128,6 @@ li:nth-of-type(2) {
     .panel {
         flex-direction: column;
     }
-}
+} */
+
+/* (Code along) Add stylings after this line */
